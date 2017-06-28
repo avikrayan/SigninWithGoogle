@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "285649362783",
+    "project_id": "gentle-vista-172106"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:285649362783:android:6d94a4fc2778d85d",
+        "android_client_info": {
+          "package_name": "rayan.avik.signinwithgoogle"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "285649362783-13q8qmal0nkqa78fhqmjfv4e8mfs5ll0.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "rayan.avik.signinwithgoogle",
+            "certificate_hash": "adfa01f52556d9d08e716159e1855cf0e78077b9"
+          }
+        },
+        {
+          "client_id": "285649362783-pdgo5f9qsn2ak2vjpprcld0lcuvijach.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyANf2abUM7vWmKhlNqgTVQ4c6Gn-DPvSBA"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 1
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

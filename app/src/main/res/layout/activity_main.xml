@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/main_layout"
+    tools:context="rayan.avik.signinwithgoogle.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="#ffffff"
+        android:elevation="9dp"
+        android:id="@+id/user_details_pannel">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="7"
+            android:gravity="center">
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/profile_image"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/ic_person"
+                android:layout_marginTop="9dp"
+                android:layout_marginBottom="9dp"
+                app:civ_border_width="2dp"
+                app:civ_border_color="#b7dcdcdc"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            android:orientation="vertical"
+            android:layout_marginLeft="9dp"
+            android:gravity="center_vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="NAME"
+                android:id="@+id/user_name"
+                android:textSize="21dp"
+                android:textStyle="bold"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Email Address"
+                android:id="@+id/user_email_address"
+                android:textSize="15dp"
+                android:layout_marginTop="5dp"
+                android:textStyle="bold"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <com.google.android.gms.common.SignInButton
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:id="@+id/btn_signin"
+        android:layout_below="@+id/user_details_pannel"
+        android:layout_marginTop="33dp"
+        android:layout_marginLeft="13dp"
+        android:layout_marginRight="13dp">
+
+    </com.google.android.gms.common.SignInButton>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="#0d47a1"
+        android:id="@+id/btn_logout"
+        android:elevation="11dp"
+        android:visibility="gone"
+        android:layout_below="@+id/user_details_pannel"
+        android:layout_marginTop="33dp"
+        android:layout_marginLeft="13dp"
+        android:layout_marginRight="13dp"
+        android:text="Logout"
+        android:textColor="#ffffff"
+        android:textStyle="bold"/>
+
+</RelativeLayout>
